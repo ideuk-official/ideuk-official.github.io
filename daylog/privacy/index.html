@@ -33,7 +33,7 @@
 <!-- ======================== 한국어 ======================== -->
 <section id="ko" lang="ko">
 <h1>Daylog 개인정보처리방침</h1>
-<p class="meta">시행일: 2026년 11월 22일 (이전: 2026년 11월 20일, 변경: 문의 이메일 주소 변경. 개발자가 받는 항목 변화 없음)</p>
+<p class="meta">시행일: 2026년 11월 25일 (이전: 2026년 11월 22일, 변경: 사용 통계 수집(Firebase Analytics) 추가)</p>
 <p class="lang"><a href="#en">English version below</a></p>
 
 <div class="summary">
@@ -42,6 +42,7 @@
     <li>Daylog에는 회원가입과 개발자 서버가 없습니다. 일기, 사진, D-Day는 <strong>사용자의 기기에</strong> 저장되며(Drive 백업을 켠 경우 사용자 본인의 Drive에도) 개발자는 볼 수 없습니다.</li>
     <li>Google Drive 백업을 켜면 백업 파일이 <strong>사용자 본인의 Google Drive</strong>(앱 전용 공간)에 저장됩니다. 개발자 서버를 거치지 않습니다.</li>
     <li>무료 앱 운영을 위해 Google AdMob 광고가 표시되며, Google이 광고 ID 등 기기 정보를 처리합니다. <strong>일기 내용은 광고나 분석에 쓰지 않습니다.</strong></li>
+    <li>앱 개선을 위해 Google Firebase Analytics로 <strong>어떤 기능이 얼마나 쓰이는지</strong> 익명 통계를 수집합니다. 일기·D-Day 내용과 이메일은 보내지 않습니다.</li>
   </ul>
 </div>
 
@@ -81,6 +82,17 @@
   <li>자세한 내용은 <a href="https://policies.google.com/technologies/partner-sites?hl=ko">Google이 파트너 사이트·앱의 정보를 사용하는 방법</a>을 참고하세요.</li>
 </ul>
 
+<h2>3-2. 사용 통계 (Google Firebase Analytics)</h2>
+<p>앱은 어떤 기능이 얼마나 쓰이는지 파악해 앱을 개선하려고 Google Firebase Analytics로 사용 통계를 수집합니다. 정식 출시 버전(릴리즈 빌드)에서만 수집하며, 앱 안에 끄는 스위치는 없습니다.</p>
+<ul>
+  <li><strong>항목</strong>: 기능 사용 기록(예: 일기 저장 여부와 사진 첨부 여부·기분 종류, D-Day 추가와 계산 방식·알림 사용 여부, 홈 화면 위젯 추가와 크기, 백업·복원 시도와 성공 여부, 통계 탭·검색·내보내기·앱 잠금 켜기·글꼴 변경 사용 여부, 처음 실행 가이드 완료 여부)와, Firebase가 자동으로 만드는 앱 인스턴스 ID(앱 설치마다 생기는 임의의 값), 앱 버전, 기기 모델·OS 버전, 대략적인 지역(IP 기준), 앱 실행·세션 정보.</li>
+  <li><strong>보내지 않는 것</strong>: 일기 제목·내용, 사진, D-Day 제목, 이메일 주소, 이름 등 사용자가 쓴 내용은 통계에 넣지 않습니다. 광고 ID는 통계에 사용하지 않도록 설정했고, 광고 개인화에도 쓰지 않습니다.</li>
+  <li><strong>목적</strong>: 어떤 기능을 더 다듬을지 판단하는 앱 개선·분석에만 씁니다. 광고나 다른 목적에 쓰지 않습니다.</li>
+  <li><strong>보유 기간</strong>: Firebase의 설정에 따라 최대 14개월 보관 후 자동 삭제됩니다.</li>
+  <li>이 통계는 이름·이메일 등 사용자를 직접 알아볼 수 있는 정보와 연결하지 않습니다. 앱을 삭제하면 더 이상 수집되지 않습니다.</li>
+  <li>자세한 내용은 <a href="https://firebase.google.com/support/privacy?hl=ko">Firebase의 개인정보 및 보안</a>을 참고하세요.</li>
+</ul>
+
 <h2>4. 알림과 홈 화면 위젯</h2>
 <p>D-Day 알림, 상단바 고정 알림, 일기 쓰기 알림(설정에서 켠 경우)은 기기 안에서 예약·표시되며, 외부로 전송되는 정보는 없습니다. 기기를 다시 켠 뒤 예약을 복구하기 위해 부팅 완료 알림을 받습니다.</p>
 <p>사용자가 홈 화면에 D-Day 위젯을 추가하면 D-Day 제목·날짜·남은 날이 위젯에 표시됩니다. 이 정보는 기기 안에서만 처리되며, 앱 잠금(PIN)을 켜 두어도 위젯과 알림에는 D-Day 제목이 보일 수 있습니다. 일기 내용은 위젯에 표시하지 않습니다.</p>
@@ -103,11 +115,11 @@
 <table>
   <tr><th>받는 자</th><td>Google LLC (미국) 및 계열사</td></tr>
   <tr><th>이전 국가</th><td>미국 등 Google 데이터 센터가 있는 국가</td></tr>
-  <tr><th>이전 시기·방법</th><td>앱 사용 중 광고를 불러올 때, Google 계정 연결·Drive 백업을 실행할 때, 사용자가 의견을 보낼 때 네트워크(HTTPS)로 전송</td></tr>
-  <tr><th>항목</th><td>광고: 광고 ID, IP 주소, 기기·앱 정보, 광고 상호작용 정보<br>계정·백업(사용자가 켠 경우만): Google 계정 정보, 백업 파일<br>의견(사용자가 보낸 경우만): 5항의 항목</td></tr>
-  <tr><th>목적</th><td>광고 표시·측정, Google 로그인, 사용자 본인 Drive에 백업 저장, 개발자 Google 계정에 의견 보관(Google Forms·Sheets)</td></tr>
+  <tr><th>이전 시기·방법</th><td>앱 사용 중 광고를 불러올 때, 기능을 사용해 통계가 기록될 때, Google 계정 연결·Drive 백업을 실행할 때, 사용자가 의견을 보낼 때 네트워크(HTTPS)로 전송</td></tr>
+  <tr><th>항목</th><td>광고: 광고 ID, IP 주소, 기기·앱 정보, 광고 상호작용 정보<br>사용 통계: 3-2항의 항목<br>계정·백업(사용자가 켠 경우만): Google 계정 정보, 백업 파일<br>의견(사용자가 보낸 경우만): 5항의 항목</td></tr>
+  <tr><th>목적</th><td>광고 표시·측정, 사용 통계 분석, Google 로그인, 사용자 본인 Drive에 백업 저장, 개발자 Google 계정에 의견 보관(Google Forms·Sheets)</td></tr>
   <tr><th>보유 기간</th><td>Google 개인정보처리방침에 따름. 백업 파일은 사용자가 삭제할 때까지. 의견은 처리 후 1년 안에 삭제</td></tr>
-  <tr><th>거부 방법</th><td>광고: 동의 창·기기 광고 설정에서 맞춤 광고 거부 (광고 표시는 무료 제공 조건이라 끌 수 없음)<br>백업: Google 계정을 연결하지 않으면 전송되지 않음<br>의견: 보내지 않으면 전송되지 않음, 이메일은 입력하지 않아도 됨</td></tr>
+  <tr><th>거부 방법</th><td>광고: 동의 창·기기 광고 설정에서 맞춤 광고 거부 (광고 표시는 무료 제공 조건이라 끌 수 없음)<br>사용 통계: 앱 안에서 끌 수 없으며, 앱을 삭제하면 수집되지 않음<br>백업: Google 계정을 연결하지 않으면 전송되지 않음<br>의견: 보내지 않으면 전송되지 않음, 이메일은 입력하지 않아도 됨</td></tr>
 </table>
 
 <h2>8. 보유 기간과 파기</h2>
@@ -162,7 +174,7 @@
 <!-- ======================== English ======================== -->
 <section id="en" lang="en">
 <h1>Daylog Privacy Policy</h1>
-<p class="meta">Effective date: November 22, 2026 (previous: November 20, 2026; change: contact email address updated, nothing new sent to the developer)</p>
+<p class="meta">Effective date: November 25, 2026 (previous: November 22, 2026; change: usage statistics (Firebase Analytics) added)</p>
 <p class="lang"><a href="#ko">한국어</a></p>
 
 <div class="summary">
@@ -171,6 +183,7 @@
     <li>Daylog has no sign-up and no developer server. Your diaries, photos, and D-Days are stored <strong>on your device</strong> (and in your own Drive if you turn on backup), and the developer cannot see them.</li>
     <li>If you turn on Google Drive backup, the backup file is stored in <strong>your own Google Drive</strong> (app-specific folder). It never passes through a developer server.</li>
     <li>To keep the app free, it shows Google AdMob ads, and Google processes device information such as the advertising ID. <strong>Your diary content is never used for ads or analytics.</strong></li>
+    <li>To improve the app, it collects anonymous statistics about <strong>which features are used and how often</strong> with Google Firebase Analytics. Diary and D-Day content and email addresses are never sent.</li>
   </ul>
 </div>
 
@@ -207,6 +220,17 @@
   <li>Learn more: <a href="https://policies.google.com/technologies/partner-sites?hl=en">How Google uses information from sites or apps that use its services</a>.</li>
 </ul>
 
+<h2>3-2. Usage statistics (Google Firebase Analytics)</h2>
+<p>To understand which features are used and improve the app, it collects usage statistics with Google Firebase Analytics. Collection happens only in the released (release build) version, and there is no switch to turn it off inside the app.</p>
+<ul>
+  <li><strong>Data</strong>: feature-use records (for example whether a diary was saved, with or without a photo, and its mood type; D-Day added with its calculation mode and whether reminders are on; home screen widget added and its size; backup and restore attempts and whether they succeeded; use of the Statistics tab, search, export, turning on the app lock, and changing the diary font; whether the first-run guide was finished), plus the app instance ID that Firebase creates automatically (a random value per app install), app version, device model and OS version, approximate region (based on IP), and app launch and session information.</li>
+  <li><strong>Never sent</strong>: diary titles and content, photos, D-Day titles, email addresses, names, or anything else you write are never included. The advertising ID is configured not to be used for analytics, and not used for ad personalization.</li>
+  <li><strong>Purpose</strong>: only to decide which features to improve (analytics and app improvement). Never for ads or other purposes.</li>
+  <li><strong>Retention</strong>: kept for up to 14 months under Firebase settings, then deleted automatically.</li>
+  <li>These statistics are not linked to directly identifying information such as your name or email. Uninstalling the app stops collection.</li>
+  <li>Learn more: <a href="https://firebase.google.com/support/privacy">Privacy and Security in Firebase</a>.</li>
+</ul>
+
 <h2>4. Notifications and home screen widgets</h2>
 <p>D-Day reminders, the pinned status-bar notification, and the daily diary reminder (if you turn it on in Settings) are scheduled and shown on your device. Nothing is sent externally. The app listens for the "boot completed" event to restore schedules after a restart.</p>
 <p>If you add a D-Day widget to your home screen, it shows D-Day titles, dates, and days remaining. This is processed only on your device. Even with the app lock (PIN) on, D-Day titles may be visible in widgets and notifications. Diary content is never shown in widgets.</p>
@@ -229,11 +253,11 @@
 <table>
   <tr><th>Recipient</th><td>Google LLC (USA) and its affiliates</td></tr>
   <tr><th>Countries</th><td>USA and other countries where Google operates data centers</td></tr>
-  <tr><th>When and how</th><td>Over the network (HTTPS) when ads are loaded, when you connect a Google account or run a Drive backup, and when you send feedback</td></tr>
-  <tr><th>Data</th><td>Ads: advertising ID, IP address, device and app information, ad interaction data<br>Account and backup (only if you turn it on): Google account information, backup file<br>Feedback (only if you send it): the items in section 5</td></tr>
-  <tr><th>Purpose</th><td>Serving and measuring ads, Google sign-in, storing backups in your own Drive, keeping feedback in the developer's Google account (Google Forms and Sheets)</td></tr>
+  <tr><th>When and how</th><td>Over the network (HTTPS) when ads are loaded, when you use features and statistics are recorded, when you connect a Google account or run a Drive backup, and when you send feedback</td></tr>
+  <tr><th>Data</th><td>Ads: advertising ID, IP address, device and app information, ad interaction data<br>Usage statistics: the items in section 3-2<br>Account and backup (only if you turn it on): Google account information, backup file<br>Feedback (only if you send it): the items in section 5</td></tr>
+  <tr><th>Purpose</th><td>Serving and measuring ads, usage analytics, Google sign-in, storing backups in your own Drive, keeping feedback in the developer's Google account (Google Forms and Sheets)</td></tr>
   <tr><th>Retention</th><td>Per the Google Privacy Policy. Backup files stay until you delete them. Feedback is deleted within one year after it is resolved.</td></tr>
-  <tr><th>How to refuse</th><td>Ads: refuse personalized ads in the consent form or device ad settings (ads themselves are a condition of the free app)<br>Backup: nothing is sent unless you connect a Google account<br>Feedback: nothing is sent unless you send it; the email address is optional</td></tr>
+  <tr><th>How to refuse</th><td>Ads: refuse personalized ads in the consent form or device ad settings (ads themselves are a condition of the free app)<br>Usage statistics: cannot be turned off inside the app; uninstalling the app stops collection<br>Backup: nothing is sent unless you connect a Google account<br>Feedback: nothing is sent unless you send it; the email address is optional</td></tr>
 </table>
 
 <h2>8. Retention and deletion</h2>
